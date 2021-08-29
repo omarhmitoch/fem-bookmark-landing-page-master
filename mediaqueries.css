@@ -1,0 +1,349 @@
+@media (max-width: 1200px) {
+  .nav-container {
+    width: 90%;
+  }
+  .main-container {
+    width: 90%;
+    margin: 0 1rem 4rem auto;
+  }
+  .main-image-container {
+    width: 45%;
+    margin-right: unset;
+  }
+  .main-text-container {
+    width: 50%;
+  }
+  .newsletter-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 968px) {
+  .section-header {
+    width: 60%;
+  }
+
+  section ul {
+    width: 80%;
+  }
+  .section-infos-container.active {
+    width: 80%;
+  }
+  .extension-section-header {
+    width: 65%;
+  }
+  .cards {
+    width: 90%;
+  }
+  .questions-section-header {
+    width: 60%;
+  }
+
+  .questions-section ul {
+    width: 60%;
+  }
+  .newsletter-container {
+    width: 60%;
+  }
+
+  .footer-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  body.active-nav {
+    overflow-y: hidden;
+  }
+  .overflow-nav {
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: var(--very-dark-blue);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    display: none;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+  }
+  .overflow-nav.active {
+    display: flex;
+  }
+  .overflow-nav .icons {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0 1.8rem;
+  }
+  .overflow-nav .icons img {
+    width: 1.5rem;
+  }
+  nav {
+    padding: 2rem 0;
+  }
+  .nav-container.active {
+    position: relative;
+    z-index: 200;
+    opacity: 1;
+  }
+  .nav-container.active .logo svg path {
+    fill: #fff;
+  }
+  .nav-container.active .logo #circle {
+    fill: #fff;
+  }
+  .nav-container.active .logo svg #inner-circle {
+    fill: var(--very-dark-blue);
+  }
+
+  .nav-container .menu {
+    display: unset;
+    z-index: 11;
+  }
+  .nav-container.active .menu svg path {
+    fill: #fff;
+  }
+  .nav-container ul {
+    display: none;
+  }
+  .nav-container.active ul {
+    display: unset;
+    margin-right: unset;
+    position: absolute;
+    width: 100%;
+    top: 3rem;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1.9px solid #404660;
+  }
+  .nav-container.active ul li {
+    padding: 1.2rem 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1.9px solid #404660;
+  }
+  .nav-container.active ul li a {
+    font-size: 1rem;
+    color: #fff;
+  }
+  .nav-container ul .login {
+    min-width: 100%;
+  }
+  .nav-container ul .login a {
+    min-width: 100%;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: transparent;
+    padding: 0.45rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: unset;
+    border: 2px solid #fff;
+  }
+  .nav-container ul .links a:hover {
+    color: #fff;
+  }
+  .nav-container ul .login a:hover {
+    background-color: unset;
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #fff;
+  }
+  /* end of nav menu styling */
+  .main-container {
+    padding-top: 1rem;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 1rem 4rem auto;
+    gap: 2rem 0;
+  }
+  .main-image-container {
+    width: 100%;
+    margin-right: unset;
+  }
+  .main-text-container {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  /* end of main section */
+  section {
+    padding-bottom: 6rem;
+  }
+  .section-header {
+    width: 80%;
+  }
+
+  section ul {
+    width: 80%;
+    flex-direction: column;
+  }
+  section ul li {
+    padding: 1.4rem 2.5rem 1.4rem 2.5rem;
+    min-width: 100%;
+    text-align: center;
+  }
+  section ul li::after {
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%) scale(0);
+  }
+  section ul li.selected::after {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .section-infos-container.active {
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 5rem 0;
+    justify-content: center;
+  }
+  .s-img-container {
+    max-width: 90%;
+    min-width: 90%;
+    min-height: 20rem;
+  }
+  .s-img-container img {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: scale-down;
+  }
+  .section-infos-container div {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  .s-img-container::before {
+    height: 80%;
+    top: 7rem;
+  }
+  .s-text-container {
+    align-items: center;
+    text-align: center;
+  }
+  .extension-section-header {
+    width: 65%;
+  }
+  .cards {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    justify-content: center;
+  }
+  .card {
+    width: 40%;
+  }
+  .card:nth-child(2) {
+    margin-top: unset;
+  }
+  .card:nth-child(3) {
+    margin-top: unset;
+    align-self: center;
+  }
+
+  .questions-section-header {
+    width: 80%;
+  }
+  .questions-section ul {
+    width: 80%;
+  }
+  .newsletter-container {
+    width: 70%;
+  }
+  .newsletter-container form .input-container {
+    width: 100%;
+  }
+  .newsletter-container form {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem 0;
+  }
+  .newsletter-container form button {
+    width: 100%;
+  }
+  .newsletter-container form .input-container.active {
+    margin-bottom: 1rem;
+  }
+
+  .footer-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+  .footer-container ul {
+    flex-direction: column;
+    gap: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-container ul svg {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .main-text-container h1 {
+    font-size: 1.5rem;
+    color: var(--very-dark-blue);
+    font-weight: 500;
+  }
+  section {
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+  }
+  .section-header {
+    width: 80%;
+  }
+  .section-header p {
+    font-size: 0.9rem;
+  }
+  .s-text-container p {
+    font-size: 0.9rem;
+  }
+  .extension-section-header {
+    width: 80%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 2rem 0;
+  }
+  .card {
+    width: 80%;
+  }
+
+  .questions-section-header {
+    width: 80%;
+  }
+  .questions-section ul {
+    width: 80%;
+  }
+  .newsletter-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .m-t-c-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem 0;
+  }
+  .questions-section-header {
+    width: 90%;
+  }
+  .questions-section ul {
+    width: 90%;
+  }
+  .questions-section ul li span {
+    font-size: 0.75rem;
+  }
+}
